@@ -8,7 +8,7 @@ header {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    margin-top: 29px;
+    margin: 29px 18px;
     background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     display: flex;
@@ -28,7 +28,6 @@ header {
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
     width: 15%;
     line-height: 90px;
   }
@@ -45,6 +44,61 @@ header {
     color: white;
   }
 
+  .intro {
+    margin: 80px 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*align-self: stretch;*/
+  }
+.intro section {
+  width: 48%;
+  margin-bottom: 10px;;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-self: stretch;
+  justify-content: space-between;
+}
+  .intro h1 {
+    font-size: 42px;
+    color: black;  
+    margin: 0;
+  }
+
+  .intro p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.702);  
+    width: 67%;
+  }
+
+.intro button {
+  width: 227px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #ff2d2d;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.video {
+  width: 48%;
+  height: 350px;
+  background-color: #c4c0b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black ;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
 /* When the screen is less than 600 pixels wide of links 100%,  */
 @media screen and (max-width: 600px) {
     .topnav {
@@ -55,6 +109,10 @@ header {
         width: 100%;
         line-height: 2.5em;
     }
+    .intro {
+      flex-direction: column;
+      height: auto;
     }
-  }
+
+    }
 
